@@ -1,4 +1,5 @@
 .colaborador {
+    position: relative;
     width: 280px;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .deletar{
-    position: relative;
-    right: -100px;
-    top: 22px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }
