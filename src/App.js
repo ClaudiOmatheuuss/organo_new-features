@@ -4,6 +4,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
+import BotaoChamaForm from "./componentes/BotaoChamaForm";
 
 function App() {
 
@@ -275,7 +276,10 @@ function App() {
         aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
       />
       <section className="times">
-        <h1>Minha organização</h1>
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center', position: 'relative' }}>
+          <h1>Minha organização</h1>
+          <BotaoChamaForm />
+        </div>
         {times.map((time, indice) =>
           <Time
             aoFavoritar={resolverFavorito}
