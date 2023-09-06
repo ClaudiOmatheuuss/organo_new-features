@@ -1,9 +1,11 @@
 import './botao.css'
 
-const Botao = ({texto}) => {
-    return <button className="botao">
-        {texto}
-    </button>
+const Botao = ({ classe, children }) => {
+    return (
+        <button className={classe}>
+            {children}
+        </button>
+    );
 }
 
-export default Botao
+export default Botao;
