@@ -4,6 +4,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
+import BotaoChamaForm from "./componentes/BotaoChamaForm";
 
 function App() {
 
@@ -242,6 +243,8 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+
   function deletarColaborador(id) {
     setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id))
   }
@@ -266,17 +269,22 @@ function App() {
     }))
   }
 
+  function exibeFormulario() {
+    setMostrarFormulario(!mostrarFormulario);
+  }
+
   return (
     <div>
       <Banner />
-      <Formulario 
+      {(mostrarFormulario) && <Formulario 
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
         aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
-      />}
+        />}
       <section className="times">
         <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center', position: 'relative' }}>
           <h1>Minha organização</h1>
+          <BotaoChamaForm exibeFormulario={exibeFormulario} />
         </div>
         {times.map((time, indice) =>
           <Time
