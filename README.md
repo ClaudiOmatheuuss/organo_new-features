@@ -6,7 +6,7 @@
                                            Entendendo o desafio
 
   <div>
-   Nesse curso sobre React recebi uma variante pronta da aplicação React chamada "Organo" no qual tive que desenvolver novas features como: deletar colaboradores, favoritar colaboradores, mudar cor dos times e criar novos times. E ainda tive o desafio de criar um botão que alterna em função de um clique entre a renderização ou não renderização do componente Formulario na aplicação.    
+   Nesse curso sobre React recebi uma variante pronta da aplicação React chamada "Organo" no qual tive que desenvolver novas features como: deletar colaboradores, favoritar colaboradores, mudar cor dos times, criar novos times e mudar o fundo dos times. E ainda tive o desafio de criar um botão que alterna em função de um clique entre a renderização ou não renderização do componente Formulario na aplicação.    
   </div>
 
 
@@ -30,6 +30,8 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------
                                            Demonstração 
+
+![localhost_3000_ (3)](https://github.com/ClaudiOmatheuuss/organo_new-features/assets/113804116/0ad63a1d-63f9-425c-b052-d55eac21c8cb)
 
 ![localhost_3000_ (2)](https://github.com/ClaudiOmatheuuss/organo_new-features/assets/113804116/70e20953-a52e-4359-a8bc-f70b67793047)
 
