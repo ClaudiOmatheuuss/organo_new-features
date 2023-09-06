@@ -4,8 +4,6 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
-import Botao from "./componentes/Botao";
-import { BiAddToQueue } from "react-icons/bi";
 
 function App() {
 
@@ -268,12 +266,10 @@ function App() {
     }))
   }
 
-  const [exibeForm, setExibeForm] = useState(false);
-
   return (
     <div>
       <Banner />
-      {exibeForm === true && <Formulario 
+      <Formulario 
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
         aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
@@ -281,7 +277,6 @@ function App() {
       <section className="times">
         <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center', position: 'relative' }}>
           <h1>Minha organização</h1>
-          <Botao onClick={() => setExibeForm(!exibeForm)} classe={'botao-chama-form'}><BiAddToQueue size={32}  /></Botao>
         </div>
         {times.map((time, indice) =>
           <Time
