@@ -3,10 +3,10 @@
    Este repositório foi criado durante meus estudos introdutórios ao React na plataforma da Alura
 </h2>
 
-                                      Entendendo o desafio
+                                           Entendendo o desafio
 
   <div>
-   Nesse curso sobre React recebi uma variante pronta da aplicação React chamada "Organo" no qual tive que desenvolver novas features como: deletar colaboradores, mudar cor dos times e criar novos times.    
+   Nesse curso sobre React recebi uma variante pronta da aplicação React chamada "Organo" no qual tive que desenvolver novas features como: deletar colaboradores, favoritar colaboradores, mudar cor dos times e criar novos times. E ainda tive o desafio de criar um botão que alterna em função de um clique entre a renderização ou não renderização do componente Formulario na aplicação.    
   </div>
 
 
@@ -21,7 +21,7 @@
 
   
 ----------------------------------------------------------------------------------------------------------------------------------------
-                                       <h3> Tecnologias usadas  </h3>
+                                        Tecnologias usadas 
 * REACT
 * JS
 * CSS
@@ -29,11 +29,9 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-                <h3> Demonstração </h3>
+                                           Demonstração 
 
-
-
-
+![localhost_3000_ (2)](https://github.com/ClaudiOmatheuuss/organo_new-features/assets/113804116/70e20953-a52e-4359-a8bc-f70b67793047)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
